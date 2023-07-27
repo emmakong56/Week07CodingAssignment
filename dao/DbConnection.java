@@ -8,10 +8,10 @@ import projects.exception.DbException;
 public class DbConnection {
 
 		private static String HOST = "localhost";
-		private static String PASSWORD = "bamenda56";
+		private static String PASSWORD = "projects";
 		private static int PORT = 3306;
 		private static String SCHEMA = "projects";
-		private static String USER = "root";
+		private static String USER = "projects";
 		
 		public static java.sql.Connection getConnection(){
 			String uri = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s", HOST, PORT, SCHEMA, USER, PASSWORD);
